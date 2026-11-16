@@ -5,11 +5,26 @@ Public playground for the Videocrypt DRM video player SDK. Vite + React + full c
 | | |
 |--|--|
 | Port | **5173** |
+| Sample version | **1.2.0** |
 | Repo | [videocryptplayer-sample-react](https://github.com/codenannu/videocryptplayer-sample-react) |
-| SDK | `@codenkay/video-videocrypt-ui` · `react` · `core` (**0.1.0**) |
+| SDK | `@codenkay/video-videocrypt-ui` · `react` · `core` (**^1.2.0**) |
 | Modes | **BFF DRM** · inline mock DRM · **clear MP4** (`drmMode="none"`) |
 
-> This sample is **standalone**. It does **not** require cloning a private SDK monorepo. Prefer installing packages from **npm**. Local `file:` links are only for pre-publish development.
+## Runtime stack
+
+| Layer | Version |
+|-------|---------|
+| Node.js | **>=20.9.0** |
+| React / react-dom | **19.3.1** |
+| Vite | ^6.4.6 |
+| Video.js | ^7.21.5 |
+| SDK | `@codenkay/video-videocrypt-*@^1.2.0` |
+
+> This sample is **standalone**. It does **not** require cloning a private SDK monorepo. Prefer installing packages from **npm**. Local `file:` links are only for pre-publish monorepo development.
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md).
 
 ## SDK packages
 
@@ -37,7 +52,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173
+Requires Node.js **>=20.9.0**. Open http://localhost:5173
 
 ### BFF DRM mode
 
@@ -57,7 +72,7 @@ Wires `playback.getSource` → `POST /api/playback`, `licenseUrl` → `/api/drm/
 ## Install peers (into your own app)
 
 ```bash
-npm install @codenkay/video-videocrypt-ui @codenkay/video-videocrypt-react @codenkay/video-videocrypt-core video.js@^7.21.5 videojs-contrib-eme@^3.11.1 react react-dom
+npm install @codenkay/video-videocrypt-ui@^1.2.0 @codenkay/video-videocrypt-react@^1.2.0 @codenkay/video-videocrypt-core@^1.2.0 video.js@^7.21.5 videojs-contrib-eme@^3.11.1 react@19.3.1 react-dom@19.3.1
 ```
 
 ```tsx

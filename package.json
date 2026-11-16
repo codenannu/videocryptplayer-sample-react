@@ -1,27 +1,41 @@
 {
   "name": "videocryptplayer-react",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.2.0",
+  "description": "Videocrypt Player sample — Vite 6 + React 19 UI (BFF / mock / clear)",
+  "homepage": "https://github.com/codenannu/videocryptplayer-sample-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codenannu/videocryptplayer-sample-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codenannu/videocryptplayer-sample-react/issues"
+  },
+  "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
-    "dev": "vite --port 5173",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "vite --port 5173 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5173 --strictPort",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@codenkay/video-videocrypt-core": "file:../videocrypt-player/packages/core",
-    "@codenkay/video-videocrypt-react": "file:../videocrypt-player/packages/react",
-    "@codenkay/video-videocrypt-ui": "file:../videocrypt-player/packages/ui",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "@codenkay/video-videocrypt-core": "^1.2.0",
+    "@codenkay/video-videocrypt-react": "^1.2.0",
+    "@codenkay/video-videocrypt-ui": "^1.2.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "video.js": "^7.21.5",
     "videojs-contrib-eme": "^3.11.1"
   },
   "devDependencies": {
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^4.7.0",
     "typescript": "^5",
-    "vite": "^6.3.0"
+    "vite": "^6.4.6"
   }
 }
