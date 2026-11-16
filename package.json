@@ -1,0 +1,27 @@
+{
+  "name": "videocryptplayer-react",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codenkay/video-videocrypt-core": "file:../videocrypt-player/packages/core",
+    "@codenkay/video-videocrypt-react": "file:../videocrypt-player/packages/react",
+    "@codenkay/video-videocrypt-ui": "file:../videocrypt-player/packages/ui",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "video.js": "^7.21.5",
+    "videojs-contrib-eme": "^3.11.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5",
+    "vite": "^6.3.0"
+  }
+}
